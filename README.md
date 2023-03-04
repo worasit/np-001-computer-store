@@ -37,7 +37,12 @@ npx cap open android
 ```
 
 ## Using Capacitor with Ionic Framework
+
 ```shell
 npm install -g @ionic/cli
 
 ```
+
+## How to hide ion-tabs on Login screen
+
+https://stackoverflow.com/questions/62359500/hide-tabs-on-login-screen-in-ionic-react

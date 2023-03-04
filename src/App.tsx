@@ -2,7 +2,6 @@ import { Redirect, Route } from "react-router-dom";
 import {
   IonApp,
   IonIcon,
-  IonLabel,
   IonRouterOutlet,
   IonTabBar,
   IonTabButton,
@@ -49,21 +48,11 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet animated>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/person">
-            <Person />
-          </Route>
-          <Route exact path="/cart">
-            <Cart />
-          </Route>
-          <Route exact path="/menu">
-            <Menu />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/login" />
-          </Route>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/person" component={Person} />
+          <Route exact path="/cart" component={Cart} />
+          <Route exact path="/menu" component={Menu} />
+          <Route exact path="/" component={() => <Redirect to="/login" />} />
           <Route exact path="/login" component={Login} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

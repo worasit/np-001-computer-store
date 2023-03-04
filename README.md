@@ -46,3 +46,7 @@ npm install -g @ionic/cli
 ## How to hide ion-tabs on Login screen
 
 https://stackoverflow.com/questions/62359500/hide-tabs-on-login-screen-in-ionic-react
+
+### Learning Courses
+
+- https://pro.academind.com/p/ionic-react-build-cross-platform-apps-web-android-ios
